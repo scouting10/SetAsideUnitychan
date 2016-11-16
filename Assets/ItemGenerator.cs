@@ -135,7 +135,7 @@ public class ItemGenerator : MonoBehaviour
 
         for (int i = 0; i < cars.Length; i++)
         {
-            difCars = this.cars[i].transform.position.z - unitychanPos.transform.position.z;
+            difCars = this.cars[i].transform.position.z - unitychanPos.transform.position.z+10;
             Mathf.Abs(difCars);
             if (difCars <= 0.005)
             {
@@ -145,7 +145,7 @@ public class ItemGenerator : MonoBehaviour
 
         for (int i = 0; i < tCones.Length; i++)
         {
-                difCones = this.tCones[i].transform.position.z - unitychanPos.transform.position.z;
+                difCones = this.tCones[i].transform.position.z - unitychanPos.transform.position.z+10;
                 Mathf.Abs(difCones);
                 if (difCones <= 0.005)
                     {
@@ -156,7 +156,7 @@ public class ItemGenerator : MonoBehaviour
 
         for (int i = 0; i < coins.Length; i++)
         {
-              difCones = this.coins[i].transform.position.z - unitychanPos.transform.position.z;
+              difCones = this.coins[i].transform.position.z - unitychanPos.transform.position.z+10;
               Mathf.Abs(difCoins);
               if (difCones <= 0.005)
                     {
